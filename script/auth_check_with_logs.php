@@ -38,7 +38,7 @@ if (!array_key_exists($authHeaderKey, $headers)) {
     writeLog($logFile, "$authHeaderKey Header: $authHeader");
 
     // Realizar la validación del token (aquí se utiliza un valor fijo para el ejemplo)
-    if ($authHeader === 'Bearer 12345.qwerty.12345') {
+    if ($authHeader === 'Bearer test.test.test.test') {
         // Si el token es válido, enviar una respuesta 200 (OK)
         writeLog($logFile, "Resultado: Autorización válida");
         http_response_code(200);
